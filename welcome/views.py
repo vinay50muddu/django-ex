@@ -16,7 +16,7 @@ def index(request):
         'hostname': hostname,
         'database': database.info(),
         'count': PageView.objects.count(),
-        'type': 'html'
+        'type': 'string'
     })
 
 def health(request):
